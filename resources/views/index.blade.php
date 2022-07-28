@@ -3,47 +3,64 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge /">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Reservoir | Landing</title>
+
   @vite('resources/css/app.css')
-  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
-<body class="bg-slate-100">
-  <main>
-    <div class="big-wrapper content">
+<body class="bg-slate-100 font-Poppins">
 
-      <header>
-        <div class="container">
-          <div class="logo">
-            <img class="flex-none w-12 h-12" src="assets/img/index-icon.png" alt="index-icon">
-            <h3 class="font-sans hover:text-gray-600">RESERVOIR</h3>
-          </div>
-        </div>
-      </header>
 
-      <div class="showcase-area">
-        <div class="container">
-          <div class="left">
-            <div class="big-title">
-              <h1 class="font-sans text-5xl">Welcome to</h1>
-              <h1 class="font-sans text-5xl">Reservoir!</h1>
-            </div>
-            <p class="text-zinc-500 font-sans text-lg leading-9 max-w-xl my-7 mr-0 mb-10 regal-blue">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div class="cta">
-              <a href="#" class="btn bg-sky-400 hover:bg-sky-500">I'm a Vendor</a>
-              <a href="#" class="btn bg-sky-400 hover:bg-sky-500">I'm a Customer</a>
-            </div>
-          </div>
-          <div class="right">
-            <img src="assets/img/shape.png" alt="shape" class="shape" />
-          </div>
-        </div>
+  <!-- HEADER -->
+  <header>
+    <nav class="container flex items-center sm:mt-12">
+      <div class="py-1">
+        <img class="flex-none w-8 h-8 mr-2.5 -mt-2.3 ml-5" src="assets/img/index-icon.png" alt="index-icon">
       </div>
-  </main>
-  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+      <h3 class="font-sans hover:text-gray-600 text-3xl leading-4.5 font-bold">RESERVOIR</h3>
+      <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs px-7 mb-2">
+        <li class="cursor-pointer">Features</li>
+        <li class="cursor-pointer">Pricing</li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+      <div class="flex sm:hidden flex-1 justify-end">
+        <i class="text-2xl fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+      <!-- Content -->
+      <div class="flex flex-1 flex-col items-center lg:items-start">
+        <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+          Hi! Welcome
+        </h2>
+        <p class="text-bookmark-grey text-lg text-justify lg:text-left mb-6">
+          We provide hassle free and fully internet based water delivery search for your office and home. <br>
+          Add your product, pick the best price or your favorite supplier, and track your delivery online!
+        </p>
+        <div class="flex justify-center flex-wrap gap-6">
+          <button type="button" class="btn btn-blue hover:bg-bookmark-white hover:text-black"> I'm a Vendor</button>
+          <button type="button" class="btn btn-white hover:bg-sky-400 hover:text-white"> I'm a Customer</button>
+        </div>
+        <!-- Temporary Image -->
+      </div>
+      <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./assets/img/index-picture.png" alt="">
+      </div>
+    </div>
+    <!-- Shape -->
+    <div class="hidden md:block overflow-hidden bg-sky-400 rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36">
+    </div>
+  </section>
 </body>
 
 </html>
