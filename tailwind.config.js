@@ -11,17 +11,19 @@ module.exports = {
                 Poppins: ["Poppins, sans-serif"],
             },
             colors: {
-                "bookmark-blue": "#242A45",
-                "bookmark-white": "#ffffff",
+                "reservoir-blue": "#242A45",
+                "reservoir-white": "#F7F7F7",
+                "reservoir-red": "#FA5959",
+                "reservoir-grey": "#9194A2",
             },
             container: {
                 center: true,
                 padding: "1rem",
-            },
-            screens: {
-                lg: "1124px",
-                xl: "1124px",
-                "2xl": "1124px",
+                screens: {
+                    lg: "1124px",
+                    xl: "1124px",
+                    "2xl": "1124px",
+                },
             },
         },
     },
