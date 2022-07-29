@@ -24,10 +24,10 @@
         <img class="flex-none w-8 h-8 mr-2.5 -mt-2.3 ml-5" src="assets/img/index-icon.png" alt="index-icon">
       </div>
       <h3 class="font-sans hover:text-gray-600 text-3xl leading-4.5 font-bold">RESERVOIR</h3>
-      <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-reservoir-blue uppercase text-xs px-7 mb-2">
-        <li class="cursor-pointer">Features</li>
-        <li class="cursor-pointer">Pricing</li>
-        <li class="cursor-pointer">Contact</li>
+      <ul id="mySidebar" class=" hidden sm:flex flex-1 justify-end items-center gap-12 text-reservoir-blue uppercase text-xs px-7 mb-2">
+        <li class="cursor-pointer"><a href="#">Features</a></li>
+        <li class="cursor-pointer"><a href="#">Pricing</li>
+        <li class="cursor-pointer"><a href="#">Contact</li>
       </ul>
       <div class="flex sm:hidden flex-1 justify-end">
         <i class="text-2xl fa-solid fa-bars"></i>
